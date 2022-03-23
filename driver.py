@@ -27,7 +27,7 @@ def main():
     adv_ms = 10  # frame advance and length
     len_ms = 20
 
-    TimitBaseDir = './dataset'
+    TimitBaseDir = './dataset/data'
 
     corpus = Corpus(TimitBaseDir, os.path.join(TimitBaseDir, 'wav'))
 
