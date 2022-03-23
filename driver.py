@@ -18,16 +18,16 @@ from myclassifier.batchgenerator import PaddedBatchGenerator
 from myclassifier.crossvalidator import CrossValidator
 import myclassifier.recurrent
 from sklearn.metrics import confusion_matrix
-from keras.layers.normalization import BatchNormalization
+from keras.layers import BatchNormalization
 
-plt.switch_backend("TkAgg")
+# plt.switch_backend("TkAgg")
 
 
 def main():
     adv_ms = 10  # frame advance and length
     len_ms = 20
 
-    TimitBaseDir = 'C:\\Users\\rashm\\Documents\\CS682\\Lab2\\timit-for-students'
+    TimitBaseDir = './dataset'
 
     corpus = Corpus(TimitBaseDir, os.path.join(TimitBaseDir, 'wav'))
 

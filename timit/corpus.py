@@ -7,7 +7,7 @@ import os.path
 
 import numpy as np
 import scipy.io.wavfile
-from keras.utils import to_categorical
+from keras.utils.np_utils  import to_categorical
 
 class Corpus:
     """Corpus object for the TIMIT corpus
